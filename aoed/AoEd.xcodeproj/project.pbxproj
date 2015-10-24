@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B1F740E0EC6049E00FF681B /* AoEProperties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B1F740C0EC6049E00FF681B /* AoEProperties.cpp */; };
+		8B40F4880E2C50E500E17E52 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B40F4870E2C50E500E17E52 /* IOKit.framework */; };
+		8B426D010E86EBE5001D4B5A /* AoEDriverInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B426D000E86EBE5001D4B5A /* AoEDriverInterface.cpp */; };
+		8B636F560E2EFE5D00124C42 /* Preferences.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B636F540E2EFE5D00124C42 /* Preferences.cpp */; };
+		8B7C98E30ECFED2000700C2D /* DiskArbitration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7C98E20ECFED2000700C2D /* DiskArbitration.framework */; };
+		8B9F859F0EDD209800CCE873 /* EthernetDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B9F859D0EDD209800CCE873 /* EthernetDetect.cpp */; };
+		8BA2CB130EA9A75A006E9CC7 /* PreferenceLoadSave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA2CB110EA9A75A006E9CC7 /* PreferenceLoadSave.cpp */; };
+		8BA90AFC0EC15AE3008D998F /* ConfigString.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BA90AFA0EC15AE3008D998F /* ConfigString.c */; };
+		8BA90B1A0EC15BCA008D998F /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA90B190EC15BCA008D998F /* CoreServices.framework */; };
+		8DD76F770486A8DE00D96B5E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		8DD76F790486A8DE00D96B5E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AB6884FE841BABC02AAC07 /* CoreFoundation.framework */; };
+		9AFF278D1BDC197C002B3ABF /* EthernetDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AFF278B1BDC197C002B3ABF /* EthernetDetect.cpp */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F7B0486A8DE00D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08FB7796FE84155DC02AAC07 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		09AB6884FE841BABC02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		8B1805740E41910F0023E2E5 /* aoe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = aoe.h; path = ../AoE/aoe.h; sourceTree = SOURCE_ROOT; };
+		8B1F740C0EC6049E00FF681B /* AoEProperties.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AoEProperties.cpp; path = ../Shared/AoEProperties.cpp; sourceTree = SOURCE_ROOT; };
+		8B1F740D0EC6049E00FF681B /* AoEProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AoEProperties.h; path = ../Shared/AoEProperties.h; sourceTree = SOURCE_ROOT; };
+		8B40F4720E2C4F8300E17E52 /* AoEcommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AoEcommon.h; path = ../Shared/AoEcommon.h; sourceTree = SOURCE_ROOT; };
+		8B40F4740E2C4F8F00E17E52 /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		8B40F4870E2C50E500E17E52 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		8B426CFF0E86EBE5001D4B5A /* AoEDriverInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AoEDriverInterface.h; path = ../Shared/AoEDriverInterface.h; sourceTree = SOURCE_ROOT; };
+		8B426D000E86EBE5001D4B5A /* AoEDriverInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AoEDriverInterface.cpp; path = ../Shared/AoEDriverInterface.cpp; sourceTree = SOURCE_ROOT; };
+		8B60441E0E33E273004FC250 /* com.aoed.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com.aoed.plist; sourceTree = "<group>"; };
+		8B62664B0E2DC663000B90AC /* AoEInterfaceCommands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AoEInterfaceCommands.h; path = ../Shared/AoEInterfaceCommands.h; sourceTree = SOURCE_ROOT; };
+		8B636F540E2EFE5D00124C42 /* Preferences.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Preferences.cpp; path = ../Shared/Preferences.cpp; sourceTree = SOURCE_ROOT; };
+		8B636F550E2EFE5D00124C42 /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Preferences.h; path = ../Shared/Preferences.h; sourceTree = SOURCE_ROOT; };
+		8B7C98E20ECFED2000700C2D /* DiskArbitration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiskArbitration.framework; path = System/Library/Frameworks/DiskArbitration.framework; sourceTree = SDKROOT; };
+		8B9F859D0EDD209800CCE873 /* EthernetDetect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EthernetDetect.cpp; path = ../Shared/EthernetDetect.cpp; sourceTree = SOURCE_ROOT; };
+		8B9F859E0EDD209800CCE873 /* EthernetDetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EthernetDetect.h; path = ../Shared/EthernetDetect.h; sourceTree = SOURCE_ROOT; };
+		8BA2CB110EA9A75A006E9CC7 /* PreferenceLoadSave.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PreferenceLoadSave.cpp; path = ../Shared/PreferenceLoadSave.cpp; sourceTree = SOURCE_ROOT; };
+		8BA2CB120EA9A75A006E9CC7 /* PreferenceLoadSave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PreferenceLoadSave.h; path = ../Shared/PreferenceLoadSave.h; sourceTree = SOURCE_ROOT; };
+		8BA90AFA0EC15AE3008D998F /* ConfigString.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ConfigString.c; path = ../Shared/ConfigString.c; sourceTree = SOURCE_ROOT; };
+		8BA90AFB0EC15AE3008D998F /* ConfigString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfigString.h; path = ../Shared/ConfigString.h; sourceTree = SOURCE_ROOT; };
+		8BA90B190EC15BCA008D998F /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		8DD76F7E0486A8DE00D96B5E /* AoEd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AoEd; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AFF278B1BDC197C002B3ABF /* EthernetDetect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EthernetDetect.cpp; path = ../Shared/EthernetDetect.cpp; sourceTree = "<group>"; };
+		9AFF278C1BDC197C002B3ABF /* EthernetDetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EthernetDetect.h; path = ../Shared/EthernetDetect.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F780486A8DE00D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BA90B1A0EC15BCA008D998F /* CoreServices.framework in Frameworks */,
+				8DD76F790486A8DE00D96B5E /* CoreFoundation.framework in Frameworks */,
+				8B40F4880E2C50E500E17E52 /* IOKit.framework in Frameworks */,
+				8B7C98E30ECFED2000700C2D /* DiskArbitration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* AoEd */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				8B636EE10E2EF8A100124C42 /* Preference Handling */,
+				8B636F300E2EFC4C00124C42 /* Interface */,
+				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
+				8B60441D0E33E25D004FC250 /* launchd options */,
+				19C28FBDFE9D53C911CA2CBB /* Products */,
+			);
+			name = AoEd;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9AFF278B1BDC197C002B3ABF /* EthernetDetect.cpp */,
+				9AFF278C1BDC197C002B3ABF /* EthernetDetect.h */,
+				08FB7796FE84155DC02AAC07 /* main.cpp */,
+				8B40F4720E2C4F8300E17E52 /* AoEcommon.h */,
+				8B1805740E41910F0023E2E5 /* aoe.h */,
+				8B40F4740E2C4F8F00E17E52 /* debug.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				8B7C98E20ECFED2000700C2D /* DiskArbitration.framework */,
+				8BA90B190EC15BCA008D998F /* CoreServices.framework */,
+				8B40F4870E2C50E500E17E52 /* IOKit.framework */,
+				09AB6884FE841BABC02AAC07 /* CoreFoundation.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		19C28FBDFE9D53C911CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76F7E0486A8DE00D96B5E /* AoEd */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B60441D0E33E25D004FC250 /* launchd options */ = {
+			isa = PBXGroup;
+			children = (
+				8B60441E0E33E273004FC250 /* com.aoed.plist */,
+			);
+			name = "launchd options";
+			sourceTree = "<group>";
+		};
+		8B636EE10E2EF8A100124C42 /* Preference Handling */ = {
+			isa = PBXGroup;
+			children = (
+				8B636F540E2EFE5D00124C42 /* Preferences.cpp */,
+				8B636F550E2EFE5D00124C42 /* Preferences.h */,
+				8BA2CB110EA9A75A006E9CC7 /* PreferenceLoadSave.cpp */,
+				8BA2CB120EA9A75A006E9CC7 /* PreferenceLoadSave.h */,
+			);
+			name = "Preference Handling";
+			sourceTree = "<group>";
+		};
+		8B636F300E2EFC4C00124C42 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				8B9F859D0EDD209800CCE873 /* EthernetDetect.cpp */,
+				8B9F859E0EDD209800CCE873 /* EthernetDetect.h */,
+				8B1F740C0EC6049E00FF681B /* AoEProperties.cpp */,
+				8B1F740D0EC6049E00FF681B /* AoEProperties.h */,
+				8BA90AFA0EC15AE3008D998F /* ConfigString.c */,
+				8BA90AFB0EC15AE3008D998F /* ConfigString.h */,
+				8B426D000E86EBE5001D4B5A /* AoEDriverInterface.cpp */,
+				8B426CFF0E86EBE5001D4B5A /* AoEDriverInterface.h */,
+				8B62664B0E2DC663000B90AC /* AoEInterfaceCommands.h */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F740486A8DE00D96B5E /* AoEd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB924708733DCA0010E9CD /* Build configuration list for PBXNativeTarget "AoEd" */;
+			buildPhases = (
+				8DD76F760486A8DE00D96B5E /* Sources */,
+				8DD76F780486A8DE00D96B5E /* Frameworks */,
+				8DD76F7B0486A8DE00D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AoEd;
+			productInstallPath = "$(HOME)/bin";
+			productName = AoEd;
+			productReference = 8DD76F7E0486A8DE00D96B5E /* AoEd */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 1DEB924B08733DCA0010E9CD /* Build configuration list for PBXProject "AoEd" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* AoEd */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F740486A8DE00D96B5E /* AoEd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F760486A8DE00D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76F770486A8DE00D96B5E /* main.cpp in Sources */,
+				8B636F560E2EFE5D00124C42 /* Preferences.cpp in Sources */,
+				8B426D010E86EBE5001D4B5A /* AoEDriverInterface.cpp in Sources */,
+				9AFF278D1BDC197C002B3ABF /* EthernetDetect.cpp in Sources */,
+				8BA2CB130EA9A75A006E9CC7 /* PreferenceLoadSave.cpp in Sources */,
+				8BA90AFC0EC15AE3008D998F /* ConfigString.c in Sources */,
+				8B1F740E0EC6049E00FF681B /* AoEProperties.cpp in Sources */,
+				8B9F859F0EDD209800CCE873 /* EthernetDetect.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB924808733DCA0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = AoEd;
+			};
+			name = Debug;
+		};
+		1DEB924908733DCA0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = AoEd;
+			};
+			name = Release;
+		};
+		1DEB924C08733DCA0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Debug;
+		};
+		1DEB924D08733DCA0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB924708733DCA0010E9CD /* Build configuration list for PBXNativeTarget "AoEd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB924808733DCA0010E9CD /* Debug */,
+				1DEB924908733DCA0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB924B08733DCA0010E9CD /* Build configuration list for PBXProject "AoEd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB924C08733DCA0010E9CD /* Debug */,
+				1DEB924D08733DCA0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

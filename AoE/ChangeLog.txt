@@ -1,0 +1,122 @@
+Known issues/TODO:
+-------------------
+
+- Avoid OS disk initialisation prompt when drive is an update LUN
+- "Device removal" warning appears when offline devices are removed from system, or devices are grown
+- Safe method of claiming a target already claimed by another device?
+- Snow Leopard Compatibility?
+- ZFS Compatibility?
+
+Apple Issues
+------------
+- Saw issues modifying partitions on a device after growing the disk size (posted to group, waiting for reply)
+- Fails to recovers interrupted transfer if all interfaces are disconnected and then re-connected (posted to group, waiting for reply)
+- AoE storage is not marked as usable by Xsan. -- Ian following up with WWDR?
+- MTU displayed incorrectly in the network preference pane -- r.6095148
+- AoE drives not prompted for use as Time Machine backup -- r.6483363
+- Disk util: remove 2nd partition and mounted drive not shown in diskutil but is in finder -- r.6486798
+- IOATABlockStorage panics when reading/writing data (very rare)-- r.6480346
+
+
+Change Log
+----------
+
+v0.3.0	- Add shelf/slot device description for disk utility
+		- Avoids panic when interface is disconnected during transfer
+		- Handles removal of interface mid-transfer (provided another interface is still available)
+		- Targets periodically sends out ATA IDENT to check for changes
+		- Devices with changed capacity re-appear in disk utility with new size
+
+v0.2.9	- Fix preference panel LUN capacity bug
+
+v0.2.8	- Preference panel renamed to just "AoE"
+		- aoed now correctly prints LUNs BSD name
+		- Raw device node no longer exists after the device is unclaimed.
+		- Improved driver reliability when claiming/unclaiming LUNs, enabling/disabling interfaces
+		- Fix occasional pref panel crash when claiming/unclaiming LUNs
+		- Idle link now checks and forces outstanding count to zero (can prevent deadlock)
+		- Newly enabled interface resets CC/SS
+		- Fixed bug when disabling interface wtih connected devices
+		- Don't allow drive to be removed if it failed to unmount
+		- Added user alert indicating when the drive has failed to unmount
+		- Addressed race condition when starting driver at bootup
+		- All ethernet ports are enabled by default
+
+v0.2.7	- Add >2TB support in preference panel
+		- Device polling now occurs every 60s
+		- Discover forces query command send
+		- Fixed scaling issue on Logo
+		- Added sort option in Preference pane
+		- Wait for unmount callback before clearing config string
+		- Handles MTU changing on connected interfaces
+		- Config string shown in aoed info
+		- Enabled interfaces shown in aoed info
+		- Revised aoed input parameters
+		- Can retrieve info on particular target with aoed info command 
+		- Fixed target numbering bug
+
+v0.2.6	- All available interfaces available on install
+		- Improve robustness when target is lost
+		- Remove target when cstring is no longer ours (ie. claimed by another driver)
+		- Partial fix for crash when enabling/disabling invalid interface number
+
+v0.2.5	- Create installers
+		- Remove drive from system when it has gone offline
+
+v0.2.4	- Unified Leopard/Tiger projects
+		- Added Tiger support
+
+v0.2.3	- Modify resend behaviour based on feedback
+		- Fix SS/CC threshold handling and idle timeout
+		- More device info is available before the disk has been claimed
+		- Begin support for handling changed capacity
+		- Fix multi-interface "load balancing"
+		- Create separate project for tiger kext
+
+v0.2.2	- Add slow start/congestion control
+		- Add ability to set max block count from command line
+		- Fix broken retransmit handling
+		- Read prefPanel enabled ports from registry
+		- AoE prefPanel now checks for valid aoed path
+		- Fix size checks for chained mbufs
+		- Can claim/unclaim from aoed
+		- Moved mount/unmount handling to aoed instead of preference panel
+		- Enabled interfaces now preserved when SR powers down
+		- aoed now returns info on unclaimed device
+		- purge send/sent queues when interface goes offline
+		- aoed now saves modified preferences by default
+		- Force immediate change to Pref panel authorisation view
+		- Fixed sleep/wake handling
+
+v0.2.1	- Fix Preference panel crashes
+		- Drives mount/unmount when claimed/unclaimed in preference panel
+
+v0.2.0	- Transfer left over sectors (fixes "cp" issue)
+		- Drive isn't mounted/attached until it is claimed.
+		- Report BSD name in info command
+		- Fix MTU calculation for en ports != 0
+		- Can set "transfer size" from user interface (aoed)
+
+v0.1.0	- Use "DMA" for transfers, allowing larger block transfers to occur
+		- Forced packets (from UI) now transmit through the command gate
+		- search commands do not re-transmit after timeout
+		- Outstanding buffer count is now stored per-interface/shelf
+
+v0.0.6	- Preference panel now shows owner
+		- Warning message displayed if trying to claim a device owned by a different computer
+		- Support multiple ethernet paths working for a single target
+		- Added load-balancing across interfaces
+
+v0.0.5	- Add preference panel support
+
+v0.0.4	- Added user interface support
+
+v0.0.3	- Fixed bug where only a single interfaces would be seen
+		- Fixed buffer overrun from received data (read commands now forced to return a multiple of the sector size)
+
+v0.0.2	- Fixed LBA address incrementing (This fixes the partitioning problem)
+		- LUN search continues while interface is disconnected (otherwise devices won't appear offline if the cable was detected)
+		- Enabled interfaces published in registry
+		- Fix non-standard MTU handling
+
+v0.0.1	- First release 9/21/08

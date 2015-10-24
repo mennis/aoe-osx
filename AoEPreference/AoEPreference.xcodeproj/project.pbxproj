@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		537F7E080BE7CC14005ABA00 /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537F7E070BE7CC14005ABA00 /* PreferencePanes.framework */; };
+		53F6AEDE0BE921BD00679EEE /* AboutWindController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F6AEDC0BE921BD00679EEE /* AboutWindController.m */; };
+		8B1F73E70EC6042C00FF681B /* AoEProperties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B1F73E50EC6042C00FF681B /* AoEProperties.cpp */; };
+		8B7255240E553BDB00BFB948 /* PrefsPane.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8B7255230E553BDB00BFB948 /* PrefsPane.mm */; };
+		8B72557F0E553CDB00BFB948 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B72557D0E553CDB00BFB948 /* Security.framework */; };
+		8B7255800E553CDB00BFB948 /* SecurityInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B72557E0E553CDB00BFB948 /* SecurityInterface.framework */; };
+		8B7255950E553CFE00BFB948 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7255940E553CFE00BFB948 /* IOKit.framework */; };
+		8B73C48B0E85809F00C3FEE6 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B73C48A0E85809F00C3FEE6 /* CoreFoundation.framework */; };
+		8B7E5DD50F0F179C00D816B3 /* aoeSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8B7E5DCD0F0F179C00D816B3 /* aoeSmall.pdf */; };
+		8B8DF8B80E573D7A00CA7D93 /* prefaoe3232.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B8DF8B70E573D7A00CA7D93 /* prefaoe3232.png */; };
+		8B980B290EAD7EDC001CC9CF /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B980B280EAD7EDC001CC9CF /* CoreServices.framework */; };
+		8B9F85A40EDD20B300CCE873 /* EthernetDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B9F85A30EDD20B300CCE873 /* EthernetDetect.cpp */; };
+		8BA2CB0E0EA9A745006E9CC7 /* PreferenceLoadSave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA2CB0C0EA9A745006E9CC7 /* PreferenceLoadSave.cpp */; };
+		8BA90B010EC15AF3008D998F /* ConfigString.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BA90AFF0EC15AF3008D998F /* ConfigString.c */; };
+		8BEC2F9B0F0F098F00057EEE /* PrefsPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BEC2F990F0F098F00057EEE /* PrefsPane.xib */; };
+		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		537F7DBF0BE7C9BF005ABA00 /* PrefsPane_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PrefsPane_Prefix.pch; sourceTree = "<group>"; };
+		537F7DCA0BE7C9E2005ABA00 /* AoE.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AoE.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
+		537F7DD70BE7CA86005ABA00 /* PrefsPane.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PrefsPane.h; sourceTree = "<group>"; };
+		537F7E070BE7CC14005ABA00 /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = /System/Library/Frameworks/PreferencePanes.framework; sourceTree = "<absolute>"; };
+		53F6AEDC0BE921BD00679EEE /* AboutWindController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AboutWindController.m; sourceTree = "<group>"; };
+		53F6AEDD0BE921BD00679EEE /* AboutWindController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AboutWindController.h; sourceTree = "<group>"; };
+		8B1F73E50EC6042C00FF681B /* AoEProperties.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AoEProperties.cpp; path = ../Shared/AoEProperties.cpp; sourceTree = SOURCE_ROOT; };
+		8B1F73E60EC6042C00FF681B /* AoEProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AoEProperties.h; path = ../Shared/AoEProperties.h; sourceTree = SOURCE_ROOT; };
+		8B7255230E553BDB00BFB948 /* PrefsPane.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PrefsPane.mm; sourceTree = "<group>"; };
+		8B72557D0E553CDB00BFB948 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8B72557E0E553CDB00BFB948 /* SecurityInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityInterface.framework; path = System/Library/Frameworks/SecurityInterface.framework; sourceTree = SDKROOT; };
+		8B7255940E553CFE00BFB948 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		8B7256F00E5542D000BFB948 /* AoEcommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AoEcommon.h; path = ../Shared/AoEcommon.h; sourceTree = SOURCE_ROOT; };
+		8B73C48A0E85809F00C3FEE6 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		8B7E5DCD0F0F179C00D816B3 /* aoeSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = aoeSmall.pdf; path = ../pics/aoeSmall.pdf; sourceTree = SOURCE_ROOT; };
+		8B82CFDF0EAC02B000190AE1 /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		8B8DF8B70E573D7A00CA7D93 /* prefaoe3232.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = prefaoe3232.png; path = ../pics/prefaoe3232.png; sourceTree = SOURCE_ROOT; };
+		8B980B280EAD7EDC001CC9CF /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		8B9F85A20EDD20B300CCE873 /* EthernetDetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EthernetDetect.h; path = ../Shared/EthernetDetect.h; sourceTree = SOURCE_ROOT; };
+		8B9F85A30EDD20B300CCE873 /* EthernetDetect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EthernetDetect.cpp; path = ../Shared/EthernetDetect.cpp; sourceTree = SOURCE_ROOT; };
+		8BA2C8DF0EA98ADF006E9CC7 /* aoe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = aoe.h; path = ../AoE/aoe.h; sourceTree = SOURCE_ROOT; };
+		8BA2CB0C0EA9A745006E9CC7 /* PreferenceLoadSave.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PreferenceLoadSave.cpp; path = ../Shared/PreferenceLoadSave.cpp; sourceTree = SOURCE_ROOT; };
+		8BA2CB0D0EA9A745006E9CC7 /* PreferenceLoadSave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PreferenceLoadSave.h; path = ../Shared/PreferenceLoadSave.h; sourceTree = SOURCE_ROOT; };
+		8BA90AFF0EC15AF3008D998F /* ConfigString.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ConfigString.c; path = ../Shared/ConfigString.c; sourceTree = SOURCE_ROOT; };
+		8BA90B000EC15AF3008D998F /* ConfigString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfigString.h; path = ../Shared/ConfigString.h; sourceTree = SOURCE_ROOT; };
+		8BEC2F9A0F0F098F00057EEE /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/PrefsPane.xib; sourceTree = "<group>"; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+				537F7E080BE7CC14005ABA00 /* PreferencePanes.framework in Frameworks */,
+				8B72557F0E553CDB00BFB948 /* Security.framework in Frameworks */,
+				8B7255800E553CDB00BFB948 /* SecurityInterface.framework in Frameworks */,
+				8B7255950E553CFE00BFB948 /* IOKit.framework in Frameworks */,
+				8B73C48B0E85809F00C3FEE6 /* CoreFoundation.framework in Frameworks */,
+				8B980B290EAD7EDC001CC9CF /* CoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* hexcolorpicker */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AFFE84173DC02AAC07 /* Sources */,
+				8BA2CA920EA9A2E6006E9CC7 /* Preference Handling */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = hexcolorpicker;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8BEC2F990F0F098F00057EEE /* PrefsPane.xib */,
+				537F7DCA0BE7C9E2005ABA00 /* AoE.prefPane */,
+				8B8DF8B70E573D7A00CA7D93 /* prefaoe3232.png */,
+				8B7E5DCD0F0F179C00D816B3 /* aoeSmall.pdf */,
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8B7255230E553BDB00BFB948 /* PrefsPane.mm */,
+				537F7DD70BE7CA86005ABA00 /* PrefsPane.h */,
+				53F6AEDC0BE921BD00679EEE /* AboutWindController.m */,
+				53F6AEDD0BE921BD00679EEE /* AboutWindController.h */,
+				537F7DBF0BE7C9BF005ABA00 /* PrefsPane_Prefix.pch */,
+				8B1F73E50EC6042C00FF681B /* AoEProperties.cpp */,
+				8B1F73E60EC6042C00FF681B /* AoEProperties.h */,
+				8B9F85A30EDD20B300CCE873 /* EthernetDetect.cpp */,
+				8B9F85A20EDD20B300CCE873 /* EthernetDetect.h */,
+				8BA90AFF0EC15AF3008D998F /* ConfigString.c */,
+				8BA90B000EC15AF3008D998F /* ConfigString.h */,
+				8B7256F00E5542D000BFB948 /* AoEcommon.h */,
+				8BA2C8DF0EA98ADF006E9CC7 /* aoe.h */,
+				8B82CFDF0EAC02B000190AE1 /* debug.h */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B980B280EAD7EDC001CC9CF /* CoreServices.framework */,
+				8B73C48A0E85809F00C3FEE6 /* CoreFoundation.framework */,
+				8B7255940E553CFE00BFB948 /* IOKit.framework */,
+				8B72557D0E553CDB00BFB948 /* Security.framework */,
+				8B72557E0E553CDB00BFB948 /* SecurityInterface.framework */,
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+				537F7E070BE7CC14005ABA00 /* PreferencePanes.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BA2CA920EA9A2E6006E9CC7 /* Preference Handling */ = {
+			isa = PBXGroup;
+			children = (
+				8BA2CB0C0EA9A745006E9CC7 /* PreferenceLoadSave.cpp */,
+				8BA2CB0D0EA9A745006E9CC7 /* PreferenceLoadSave.h */,
+			);
+			name = "Preference Handling";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* AoE Preferences */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "AoE Preferences" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AoE Preferences";
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = hexcolorpicker;
+			productReference = 537F7DCA0BE7C9E2005ABA00 /* AoE.prefPane */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "AoEPreference" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* hexcolorpicker */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* AoE Preferences */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
+				8B8DF8B80E573D7A00CA7D93 /* prefaoe3232.png in Resources */,
+				8BEC2F9B0F0F098F00057EEE /* PrefsPane.xib in Resources */,
+				8B7E5DD50F0F179C00D816B3 /* aoeSmall.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F6AEDE0BE921BD00679EEE /* AboutWindController.m in Sources */,
+				8B7255240E553BDB00BFB948 /* PrefsPane.mm in Sources */,
+				8BA2CB0E0EA9A745006E9CC7 /* PreferenceLoadSave.cpp in Sources */,
+				8BA90B010EC15AF3008D998F /* ConfigString.c in Sources */,
+				8B1F73E70EC6042C00FF681B /* AoEProperties.cpp in Sources */,
+				8B9F85A40EDD20B300CCE873 /* EthernetDetect.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8BEC2F990F0F098F00057EEE /* PrefsPane.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BEC2F9A0F0F098F00057EEE /* English */,
+			);
+			name = PrefsPane.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = NO;
+				DSTROOT = /;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PrefsPane_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "";
+				PRODUCT_BUNDLE_IDENTIFIER = net.corvus.AoEPreference;
+				PRODUCT_NAME = AoE;
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = Release;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "ppc i386 ppc64 x86_64";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PREBINDING = NO;
+				PRODUCT_NAME = AoE;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		7458B4C30A90FDD000A75A3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PrefsPane_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				PRODUCT_BUNDLE_IDENTIFIER = net.corvus.AoEPreference;
+				PRODUCT_NAME = AoE;
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = Debug;
+		};
+		7458B4C40A90FDD000A75A3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "ppc i386 ppc64 x86_64";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				PRODUCT_NAME = AoE;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+				TEST_HOST = "";
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "AoE Preferences" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913C08733D840010E9CD /* Release */,
+				7458B4C30A90FDD000A75A3B /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "AoEPreference" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB914008733D840010E9CD /* Release */,
+				7458B4C40A90FDD000A75A3B /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

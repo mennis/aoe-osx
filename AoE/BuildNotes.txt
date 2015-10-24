@@ -1,0 +1,15 @@
+Build Notes
+-----------
+
+This project was built with XCode 3.1.1
+
+To build the debug version, you'll need to install FireLog. First install the FireWire SDK
+
+http://developer.apple.com/sdk/
+
+[NOTE: This will require a (free) ADC account]
+
+After installing the SDK, install FireLog
+/Developer/FireWireSDK26/Tools/FireLog/FireLog 2.0.0.pkg
+
+Note, the release build doesn't require this to be installed.
