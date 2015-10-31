@@ -6,14 +6,14 @@
 	<string>English</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
-	<key>CFBundleName</key>
-	<string>${PRODUCT_NAME}</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>net.corvus.driver.aoe</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleSignature</key>
@@ -26,6 +26,10 @@
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>net.corvus.driver.aoe</string>
+			<key>IOClass</key>
+			<string>net_corvus_driver_aoe</string>
+			<key>IOMatchCategory</key>
+			<string>net_corvus_driver_aoe</string>
 			<key>IOMediaIcon</key>
 			<dict>
 				<key>CFBundleIdentifier</key>
@@ -33,10 +37,6 @@
 				<key>IOBundleResourceFile</key>
 				<string>AoE.icns</string>
 			</dict>
-			<key>IOClass</key>
-			<string>net_corvus_driver_aoe</string>
-			<key>IOMatchCategory</key>
-			<string>net_corvus_driver_aoe</string>
 			<key>IOProviderClass</key>
 			<string>IOResources</string>
 			<key>IOResourceMatch</key>

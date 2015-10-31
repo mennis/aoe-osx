@@ -74,7 +74,10 @@ bool AOE_CONTROLLER_INTERFACE_NAME::init(AOE_KEXT_NAME* pAoEService)
 	m_nMaxTransferSize = DEFAULT_MAX_TRANSFER_SIZE;
 	
 	m_pControllers = OSArray::withCapacity(2);
-	
+
+    // Setup timer to check status periodically
+    IOWorkLoop* pWorkLoop = pAoEService->getWorkLoop();
+    
 	if ( NULL==m_pControllers )
 	{
 		debugError("Cannot initialise m_pControllers\n");
@@ -82,8 +85,7 @@ bool AOE_CONTROLLER_INTERFACE_NAME::init(AOE_KEXT_NAME* pAoEService)
 		goto Done;
 	}
 	
-	// Setup timer to check status periodically
-	IOWorkLoop* pWorkLoop = pAoEService->getWorkLoop();
+
 	
 	if ( pWorkLoop )
 	{
@@ -946,7 +948,7 @@ int AOE_CONTROLLER_INTERFACE_NAME::send_ata_packet(AOE_CONTROLLER_NAME* pSender,
 		mbuf_freem(m);
 		
 		// Run the reset in the timeout, and exit now.
-		return m_pFakeReturnTimer->setTimeout(0.0);
+		return m_pFakeReturnTimer->setTimeout((UInt32)0.0);
 	}
 	
 	return send_packet(m, Tag, pTargetInfo);

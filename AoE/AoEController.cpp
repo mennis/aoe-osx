@@ -9,7 +9,7 @@
  *
  *
  * Each AoE target has a separate controller/device pair.
- * - Classicaly, ATA devices appear in device0/device1 pairs. There are assumptions about this in IOATAFamily and the protocol service IOATABlockStorage.
+ * - Classically, ATA devices appear in device0/device1 pairs. There are assumptions about this in IOATAFamily and the protocol service IOATABlockStorage.
  *   AoE uses a single device for each controller (ie. there are no device1 in the system).
  * - This also provides more flexible queuing for multiple targets attached to the system.
 

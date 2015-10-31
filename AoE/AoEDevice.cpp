@@ -17,7 +17,7 @@
 #include <IOKit/ata/IOATADevice.h>
 #include <IOKit/ata/IOATAController.h>
 #include <IOKit/ata/IOATADevConfig.h>
-#include "IOSyncer.h"
+#include "../Shared/IOSyncer.h"
 #include "AoEController.h"
 #include "../Shared/AoEcommon.h"
 #include "AoEDevice.h"

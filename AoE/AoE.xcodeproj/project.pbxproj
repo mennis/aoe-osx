@@ -29,7 +29,6 @@
 		8BA8ECD80E1713C3002373C6 /* debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA8ECD70E1713C3002373C6 /* debug.h */; };
 		8BAFD8930E4606E0003E4299 /* AoEController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BAFD8910E4606E0003E4299 /* AoEController.h */; };
 		8BAFD8940E4606E0003E4299 /* AoEController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BAFD8920E4606E0003E4299 /* AoEController.cpp */; };
-		9AFF278A1BDC1756002B3ABF /* IOSyncer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AFF27891BDC1756002B3ABF /* IOSyncer.h */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,7 +60,6 @@
 		8BAFD8910E4606E0003E4299 /* AoEController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AoEController.h; sourceTree = "<group>"; };
 		8BAFD8920E4606E0003E4299 /* AoEController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AoEController.cpp; sourceTree = "<group>"; };
 		8DA8362C06AD9B9200E5AC22 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = /System/Library/Frameworks/Kernel.framework; sourceTree = "<absolute>"; };
-		9AFF27891BDC1756002B3ABF /* IOSyncer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSyncer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +110,6 @@
 		247142CAFF3F8F9811CA285C /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				9AFF27891BDC1756002B3ABF /* IOSyncer.h */,
 				1A224C3FFF42367911CA2CB7 /* AoEService.cpp */,
 				1A224C3EFF42367911CA2CB7 /* AoEService.h */,
 				8B6F224D0E52757300247CE8 /* AoEcommon.c */,
@@ -174,7 +171,6 @@
 				8B7DA48A0E3BA5B1005D0103 /* aoe.h in Headers */,
 				8BAFD8930E4606E0003E4299 /* AoEController.h in Headers */,
 				8B914B5F0E5A6D360031AC7E /* AoEDevice.h in Headers */,
-				9AFF278A1BDC1756002B3ABF /* IOSyncer.h in Headers */,
 				8B949F9F0E5D191200A92469 /* AoEControllerInterface.h in Headers */,
 				8B79AEB30EBCFAE900F845E7 /* EInterface.h in Headers */,
 				8B808EBD0EC6758600B471DA /* EInterfaces.h in Headers */,
@@ -210,7 +206,7 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0710;
 			};
 			buildConfigurationList = 1DEB91DD08733DB10010E9CD /* Build configuration list for PBXProject "AoE" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -296,6 +292,7 @@
 				INFOPLIST_PREPROCESS = YES;
 				MODULE_NAME = net.corvus.driver.aoe;
 				MODULE_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = net.corvus.driver.aoe;
 				PRODUCT_NAME = AoE;
 				SDKROOT = macosx;
 				VALID_ARCHS = "i386 x86_64";
@@ -315,6 +312,7 @@
 				INFOPLIST_PREPROCESS = YES;
 				MODULE_NAME = net.corvus.driver.aoe;
 				MODULE_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = net.corvus.driver.aoe;
 				PRODUCT_NAME = AoE;
 				SDKROOT = macosx;
 				VALID_ARCHS = "i386 x86_64";
@@ -325,6 +323,7 @@
 		1DEB91DE08733DB10010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DEBUGGING_SYMBOLS = full;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -335,6 +334,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = InfoDEBUG.plist;
 				INFOPLIST_PREPROCESSOR_DEFINITIONS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MODULE_NAME = net.corvus.driver.aoe;
 				MODULE_VERSION = 0.0.1;
 				ONLY_ACTIVE_ARCH = YES;
@@ -354,6 +354,7 @@
 				GCC_WARN_SHADOW = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MODULE_NAME = net.corvus.driver.aoeinterface;
 				MODULE_VERSION = 0.0.1;
 				PREBINDING = NO;
