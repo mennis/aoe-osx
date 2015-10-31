@@ -58,7 +58,7 @@ __END_DECLS
 #define MAX_TAG									(TAG_BROADCAST_MASK-1)
 
 //-----------//
-// anomolies //
+// anomalies //
 //-----------//
 
 // These macros were added in 10.5, since we're building against 10.4u, we need to add it in ourselves
@@ -103,7 +103,7 @@ __END_DECLS
 #define SHELF_PROPERTY						"Shelf"
 #define SLOT_PROPERTY						"Slot"
 #define CAPACITY_PROPERTY					"Capacity"
-#define TARGET_NUMER_PROPERTY				"Number"
+#define TARGET_NUMBER_PROPERTY              "Number"
 #define CONFIG_STRING_PROPERTY				"Config String"
 #define ATTACHED_INTERFACES_PROPERTY		"Interfaces"
 #define BUFFER_COUNT_PROPERTY				"Buffer Count"
@@ -120,7 +120,7 @@ __END_DECLS
 //---------------//
 
 // This is arbitrary and can be increased to provide support for more interfaces
-#define	MAX_SUPPORTED_ETHERNET_CONNETIONS		6
+#define	MAX_SUPPORTED_ETHERNET_CONNECTIONS		6
 
 // Just used for the forced packet commands on the user interface
 #define AOEINTERFACE_MAX_PACKET_WORDS			10
@@ -139,7 +139,7 @@ typedef struct _AoEPreferencesStruct
 	uint32_t nNumberOfPorts;
 	uint32_t nMaxTransferSize;
 	uint32_t nUserBlockCountWindow;
-	uint32_t anEnabledPorts[MAX_SUPPORTED_ETHERNET_CONNETIONS];
+	uint32_t anEnabledPorts[MAX_SUPPORTED_ETHERNET_CONNECTIONS];
 	uint8_t aszComputerConfigString[MAX_CONFIG_STRING_LENGTH];
 } AoEPreferencesStruct;
 
@@ -154,10 +154,10 @@ typedef struct _TargetInfo
 	uint32_t	NumSectors;
 
 	uint32_t	nNumberOfInterfaces;
-	ifnet_t		aInterfaces[MAX_SUPPORTED_ETHERNET_CONNETIONS];
-	uint32_t	aInterfaceNum[MAX_SUPPORTED_ETHERNET_CONNETIONS];
-	u_char		aaSrcMACAddress[MAX_SUPPORTED_ETHERNET_CONNETIONS][ETHER_ADDR_LEN];
-	u_char		aaDestMACAddress[MAX_SUPPORTED_ETHERNET_CONNETIONS][ETHER_ADDR_LEN];
+	ifnet_t		aInterfaces[MAX_SUPPORTED_ETHERNET_CONNECTIONS];
+	uint32_t	aInterfaceNum[MAX_SUPPORTED_ETHERNET_CONNECTIONS];
+	u_char		aaSrcMACAddress[MAX_SUPPORTED_ETHERNET_CONNECTIONS][ETHER_ADDR_LEN];
+	u_char		aaDestMACAddress[MAX_SUPPORTED_ETHERNET_CONNECTIONS][ETHER_ADDR_LEN];
 	
 	uint32_t	nLastSentInterface;
 } TargetInfo;

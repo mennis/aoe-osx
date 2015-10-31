@@ -16,8 +16,6 @@
 #include <unistd.h>
 #include <string.h>
 #include "AoEDriverInterface.h"
-#include "AoEcommon.h"
-#include "AoEInterfaceCommands.h"
 #include "debug.h"
 
 // For a description of communicating with NKE kexts, see:
@@ -72,7 +70,7 @@ int AoEDriverInterface::connect_to_driver()
 	sc.sc_id = ctl_info.ctl_id;
 	sc.sc_unit = 0;
 	
-	// Now connect to our kext (this will fail without root privelages)
+	// Now connect to our kext (this will fail without root privileges)
 	ret = connect(m_Socket, (struct sockaddr *)&sc, sizeof(struct sockaddr_ctl));
 	if ( ret )
 	{

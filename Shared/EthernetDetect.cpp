@@ -8,8 +8,6 @@
 
 
 #include <IOKit/network/IOEthernetInterface.h>
-#include <IOKit/network/IONetworkInterface.h>
-#include <IOKit/network/IOEthernetController.h>
 #include <IOKit/IOBSD.h>
 #include "EthernetDetect.h"
 #include "debug.h"

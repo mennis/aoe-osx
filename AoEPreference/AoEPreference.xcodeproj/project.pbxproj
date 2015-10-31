@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,7 @@
 		8BEC2F9B0F0F098F00057EEE /* PrefsPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BEC2F990F0F098F00057EEE /* PrefsPane.xib */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		9A6889441BE4920F002CDCF8 /* AoE.prefPane in Resources */ = {isa = PBXBuildFile; fileRef = 537F7DCA0BE7C9E2005ABA00 /* AoE.prefPane */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -197,10 +198,10 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0710;
 			};
 			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "AoEPreference" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -222,6 +223,7 @@
 			files = (
 				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
 				8B8DF8B80E573D7A00CA7D93 /* prefaoe3232.png in Resources */,
+				9A6889441BE4920F002CDCF8 /* AoE.prefPane in Resources */,
 				8BEC2F9B0F0F098F00057EEE /* PrefsPane.xib in Resources */,
 				8B7E5DD50F0F179C00D816B3 /* aoeSmall.pdf in Resources */,
 			);
@@ -286,14 +288,17 @@
 		1DEB914008733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "ppc i386 ppc64 x86_64";
+				ADDITIONAL_SDKS = "";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = x86_64;
+				ENABLE_TESTABILITY = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				PRODUCT_NAME = AoE;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
-				VALID_ARCHS = x86_64;
+				SDKROOT = macosx;
+				VALID_ARCHS = "";
 			};
 			name = Release;
 		};
@@ -320,7 +325,8 @@
 		7458B4C40A90FDD000A75A3B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "ppc i386 ppc64 x86_64";
+				ADDITIONAL_SDKS = "";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = x86_64;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -332,9 +338,9 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				PRODUCT_NAME = AoE;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+				SDKROOT = macosx;
 				TEST_HOST = "";
-				VALID_ARCHS = x86_64;
+				VALID_ARCHS = "";
 			};
 			name = Debug;
 		};

@@ -11,12 +11,7 @@
 
 #include <CoreFoundation/CoreFoundation.h>
 #include <CoreServices/CoreServices.h>
-#include <IOKit/IOKitLib.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "ConfigString.h"
-#include "debug.h"
 
 #define APPLE_DRIVER_PREFIX			"net.corvus.apple"
 

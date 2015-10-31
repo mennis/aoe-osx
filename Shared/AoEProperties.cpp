@@ -96,7 +96,7 @@ void AoEProperties::matched_callback(void* pRefcon, io_iterator_t iterator)
 		CFRunLoopRemoveSource(CFRunLoopGetCurrent(), ms_IOKitNotificationRunLoopSource, kCFRunLoopDefaultMode);
 	}
 	
-	// Empty the remaining devices in the list (dont release the iterator though, or we wont get our callback)
+	// Empty the remaining devices in the list (don't release the iterator though, or we won't get our callback)
 	while( 0 != (Object=IOIteratorNext(iterator)) )
 		IOObjectRelease(Object);
 }

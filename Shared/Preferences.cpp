@@ -7,7 +7,7 @@
  */
 
 /*
- * To create additonal preferences:
+ * To create additional preferences:
  *
  * 1/ Modify the AoEPreferenceStruct to include the preferences
  * 2/ Add support in AoEPreferences to store/recall the preferences from the file to the struct
