@@ -6,6 +6,10 @@ This was a driver developed on and for Mac OS X 10.5, Leopard.  It
 allows a Mac system to access and use ATA over Ethernet block storage
 devices on the local ethernet network.
 
+The original author is Brett D. George.  He is reachable via a GMail
+address with username composed of the letters in the name just
+mentioned, including the middle initial.
+
 ## Projects
 
 * AoE - Kernel extension for handling ethernet handling and ATA translation
