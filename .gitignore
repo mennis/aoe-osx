@@ -34,3 +34,20 @@
 # JIRA plugin
 atlassian-ide-plugin.xml
 
+# OS X problem files that should never be committed
+.DS_Store
+.Trashes
+*.swp
+
+# Xcode painful bits that should never be committed
+DerivedData/
+build/
+project.xcworkspace/
+xcuserdata/
+*~.nib
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+*.xccheckout
